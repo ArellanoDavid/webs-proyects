@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.jpg" />
+    <link rel="shortcut icon" href=""/>
+    <script src="js/cancelar.js"></script>
+    <title>Reservas</title>
+    
+    
+</head>
+<div class="contenedor0">
+  <header class="menu">
+    
+      <div class="logo"> <a href="Index.html"><img src="img/diseño.png" alt="logo" width="200px" height="200px"></a></div>
+    
+      <nav>
+      <ul class="nav">
+        <li><a href="menu.html">MENU</a></li>
+            
+          <li><a href="promociones.html">PROMOCIONES</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+          <li class="segundoboton"><a href="reservas.html">RESERVAS</a>
+              <ul>
+                <li><a href="nuestrosRestaurantes.html">NUESTROS RESTAURANTES</a></li>
+              </ul>
+            
+          </li>
+                  <li  class="aDomicilio"><a href="aDomicilio.html">A DOMICILIO</a></li>
+      </ul>
+
+    </nav>
+
+
+    </header>
+  
+    <!--Contenido de la página de reservas-->
+    <div class="reservas-container">
+    <form action="enviar.php" method="post" id="reservas">
+        <fieldset>
+          <legend><h2>Información Personal</h2></legend>
+          <div class="form-group">
+            <input type="text"  name="nombre" placeholder="Nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="text"  name="correo" placeholder="Correo Electrónico" required>
+          </div>
+          <div class="form-group">
+            
+            <input type="text"  name="telefono" placeholder="Teléfono" required>
+          </div>
+          <div class="form-group">
+            
+            <input type="text"  name="direccion" placeholder="Dirección" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><h2>Información de Reserva</h2></legend>
+          <div class="form-group">
+            <label for="date">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+          <div class="form-group">
+            <label for="time">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+          </div>
+          <div class="form-group">
+            <label for="numeropersonas">Número de Personas:</label>
+            <input type="number" id="numeropersonas" name="numeropersonas" min="1" max="20" required>
+          </div>
+          <div class="form-group">
+            <label for="ocasion">Ocasión:</label>
+            <select id="ocasion" name="ocasion">
+              <option value="aniversario">Aniversario</option>
+              <option value="cumpleaños">Cumpleaños</option>
+              <option value="reunion">Reunión</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea name="mensaje" placeholder="Escriba aquí su mensaje."></textarea>
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <input type="submit" value="RESERVAR" id="boton1">
+          <input type="button" value="CANCELAR" id="boton2">
+        </div>
+       
+
+      </form>
+    </div> 
+      
+    <footer id="piePagReservas">
+
+				
+
+				
+
+      <div id="rrss">
+        <h3>SÍGUENOS EN</h3>
+
+        <ul>
+          <li type="none"> 
+            <center>	
+              <a id="instagram" href="https://www.instagram.com/amadi17/" target="blank">Instagram</a>
+               <a href="https://www.instagram.com/" target="_blank"><img class="instagram"src="img/instagram.png" alt="instagram"  width="20px"  /></a>
+           
+           </center>
+              
+          </li>
+        </ul>
+       
+          <ul>
+          <li type="none"> 
+            <center>
+              <a href="https://twitter.com/?lang=es" target="_blank"><img class="twitter" src="img/twitter.png" alt="Twitter"  width="30px"></a>
+              <br/>
+              <a id="twitter"  href="https://twitter.com/" target="blank">Twitter</a>
+            </center>
+              
+          </li>
+        </ul>
+        
+         <ul>
+          <li type="none">  
+            <center>
+              <a  id="facebook" href="https://www.facebook.com" target="blank">Facebook</a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="facebook"src="img/facebook.png" alt="facebook"  width="20px"  /></a>
+              </center>  
+                
+          </li>
+        </ul>
+
+
+       
+      </div>
+      
+        <div id="contacto">
+            <h3>CONTACTO</h3>
+          <p class="direccion">C/ Mendilauta, 13 Zarautz (Gipuzkoa) 20800 España
+
+        T. (+34) 943130000</p>
+          <a href="https://twitter.com/Winamax_Espana" target="blank" id="quitoSubrayado">Enviar un email</a>
+        </div>
+
+        <div id="empresaTuristica">
+          <h3>EMPRESA TURÍSTICA</h3>
+         <p class="empresaT">Número HSS08552</p>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48660.137311600076!2d-3.8816253339650513!3d40.33660943971843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418ed1c0806eb9%3A0xd1c81eb657e5b6f2!2sFoster&#39;s%20Hollywood!5e0!3m2!1ses!2ses!4v1685345019037!5m2!1ses!2ses" 
+					 width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      
+
+      <div id="politicaPrivacidad">
+        <div><p><a href="pdf/politicaprivacidad.pdf" target="blank" id="quitoSubrayado">Mapa del sitio || Politica de privacidad || Aviso legal</a></p>
+          <p>Copyright @ 2023 SaboresEu. Todos los derechos reservados.
+        </div>
+      </div>
+
+      </footer>
+</body>
+</html>

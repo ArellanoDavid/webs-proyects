@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pedidos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/javascript.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.jpg" />
+	<div class="contenedor0">
+		<header class="menu">
+			
+				<div class="logo"> <a href="Index.html"><img src="img/diseño.png" alt="logo" width="200px" height="200px"></a></div>
+			
+				<nav>
+				<ul class="nav">
+					<li><a href="menu.html">MENU</a></li>
+							
+						<li><a href="promociones.html">PROMOCIONES</a></li>
+						<li><a href="contacto.html">CONTACTO</a></li>
+						<li class="segundoboton"><a href="reservas.html">RESERVAS</a>
+								<ul>
+									<li><a href="nuestrosRestaurantes.html">NUESTROS RESTAURANTES</a></li>
+								</ul>
+							
+						</li>
+                    <li  class="aDomicilio"><a href="aDomicilio.html">A DOMICILIO</a></li>
+				</ul>
+
+			</nav>
+
+
+			</header>
+
+
+
+			
+
+
+		<main id="contenido">
+
+			<div id="imagen1"> </div>
+			<div id="opiniones">
+			
+               <center> <h1>PIDE A DOMICILIO</h1></center>
+        <center><div id="formularioPedidos">
+            <form action="procesar_pedido.php" method="post" id="miPedido">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto" onchange="calcularPrecio()">
+                    <option value="0">seleccione un producto </option>
+                    <option value="10" >Cassoulet (10€)</option>
+                    <option value="10">coq au vin (10€)</option>
+                    <option value="15">paella (15€)</option>
+                    <option value="12">Tortilla de Patata (12€)</option>
+                    <option value="10">Pasta carbonara (10€)</option>
+                    <option value="10">Pasta Bolognese (10€)</option>
+                    <option value="10">pizza (10€)</option>
+                    <option value="8">bacalo (8€)</option>
+                    <option value="11">bacalo con nata (11€)</option>
+                    <option value="11">moussaka (11€)</option>
+                    <option value="11">saurkraut (11€)</option>
+                    <option value="11">kalakukko (11€)</option>
+                    <option value="6">entrantes (6€)</option>
+                    <option value="9">hamburguesa (9€)</option>
+                    <option value="16">costillas (16€)</option>
+                    <option value="17">carnes (17€)</option>
+                    <option value="8">ensalada (8€)</option>
+                    <option value="3">postres (3€)</option>
+                    
+                </select><br>
+
+              
+
+		        <label for="precio">Precio:</label>
+		        <div class="precio">
+		        	<span id="precio-producto">0€</span>
+		        </div>
+
+		            <label for="precio-final">Precio Final:</label>
+		        <div class="precio">
+		        	<span id="precio-final">0€</span>
+		        </div>
+
+		        <input type="submit" value="Hacer Pedido">
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" onchange="calcularPrecio()" ><br>
+
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea><br>
+
+              
+            </form>
+        </div>
+        
+    </center>
+
+		</main>
+
+
+
+			<footer id="piePagMiPedido">
+
+				
+
+				
+
+				<div id="rrss">
+					<h3>SÍGUENOS EN</h3>
+
+					<ul>
+						<li type="none"> 
+							<center>	
+								<a id="instagram" href="https://www.instagram.com/amadi17/" target="blank">Instagram</a>
+								 <a href="https://www.instagram.com/" target="_blank"><img class="instagram"src="img/instagram.png" alt="instagram"  width="20px"  /></a>
+							 
+							 </center>
+				 			 
+						</li>
+					</ul>
+				 
+				    <ul>
+						<li type="none"> 
+							<center>
+								<a href="https://twitter.com/?lang=es" target="_blank"><img class="twitter" src="img/twitter.png" alt="Twitter"  width="30px"></a>
+								<br/>
+							  <a id="twitter"  href="https://twitter.com/" target="blank">Twitter</a>
+						  </center>
+				  			
+						</li>
+					</ul>
+				  
+ 					<ul>
+						<li type="none">  
+							<center>
+								<a  id="facebook" href="https://www.facebook.com" target="blank">Facebook</a>
+							    <a href="https://www.facebook.com/" target="_blank"><img class="facebook"src="img/facebook.png" alt="facebook"  width="20px"  /></a>
+				  			</center>  
+				  			  
+						</li>
+					</ul>
+
+
+				 
+				</div>
+				
+				  <div id="contacto">
+				  		<h3>CONTACTO</h3>
+				  	<p class="direccion">C/ Mendilauta, 13 Zarautz (Gipuzkoa) 20800 España
+
+					T. (+34) 943130000</p>
+					  <a href="https://twitter.com/Winamax_Espana" target="blank" id="quitoSubrayado">Enviar un email</a>
+				  </div>
+
+				  <div id="empresaTuristica">
+				  	<h3>EMPRESA TURÍSTICA</h3>
+					 <p class="empresaT">Número HSS08552</p>
+					 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48660.137311600076!2d-3.8816253339650513!3d40.33660943971843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418ed1c0806eb9%3A0xd1c81eb657e5b6f2!2sFoster&#39;s%20Hollywood!5e0!3m2!1ses!2ses!4v1685345019037!5m2!1ses!2ses" 
+					 width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				  </div>
+				
+
+				<div id="politicaPrivacidad">
+				  <div><p><a href="pdf/politicaprivacidad.pdf" target="blank" id="quitoSubrayado">Mapa del sitio || Politica de privacidad || Aviso legal</a></p>
+				  	<p>Copyright @ 2023 SaboresEu. Todos los derechos reservados.
+				  </div>
+				</div>
+
+			  </footer>
+
+
+
+
+
+
+
+	
+
+
+
+	</div>
+	</body>
+
+</html>
